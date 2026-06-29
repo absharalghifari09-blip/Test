@@ -14,13 +14,16 @@
             background-color: #0b4a2b; 
             color: white;
         }
+        .text-accent {
+            color: #ffc107; 
+        }
         .hero-section {
             background-color: #eef2f0;
-            padding: 100px 0;
+            padding: 80px 0;
             text-align: center;
         }
-
-        /* PERBAIKAN: Teks Navbar agar tidak terpotong di HP */
+        
+        /* Teks Navbar agar tidak terpotong di HP */
         .navbar-brand {
             white-space: normal !important;
             font-size: 14px;
@@ -32,6 +35,28 @@
                 font-size: 20px;
                 max-width: 100%;
             }
+        }
+
+        .filosofi-card {
+            border-left: 4px solid #ffc107;
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            height: 100%;
+        }
+        .misi-box {
+            background-color: #0b4a2b;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            height: 100%;
+            transition: 0.3s;
+        }
+        .misi-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
         }
     </style>
 </head>
@@ -56,23 +81,101 @@
         </div>
     </nav>
 
-    <div class="container py-5 mt-5">
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="fw-bold" style="color: #0b4a2b;">Visi Perusahaan</h1>
+            <div style="width: 60px; height: 4px; background-color: #ffc107; margin: 15px auto;"></div>
+            <p class="lead mt-4 text-secondary fst-italic" style="max-width: 800px; margin: 0 auto;">
+                "Menjadi konstelasi utama dalam industri properti yang revolusioner, menciptakan ruang kehidupan visioner yang memberikan perlindungan, kenyamanan, dan kejayaan berkelanjutan bagi masyarakat."
+            </p>
+        </div>
+    </section>
+
+    <section class="container py-5">
         <div class="row text-center mb-5">
             <div class="col-md-12">
-                <h1 class="fw-bold" style="color: #0b4a2b;">Tentang Kami</h1>
+                <h2 class="fw-bold" style="color: #0b4a2b;">Makna Filosofi Logo</h2>
                 <div style="width: 60px; height: 4px; background-color: #ffc107; margin: 10px auto;"></div>
-                <p class="text-muted mt-4">Membangun dengan integritas tinggi dan transparansi penuh untuk menghadirkan hunian yang aman, nyaman, serta bernilai investasi prima bagi masa depan keluarga Anda.</p>
-                <a href="index.html" class="btn btn-outline-success mt-3">Kembali ke Beranda</a>
+                <p class="text-muted mt-3">Identitas yang melambangkan komitmen dan integritas kami.</p>
             </div>
         </div>
-    </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="filosofi-card">
+                    <h5 class="fw-bold" style="color: #0b4a2b;">⭐ Bintang Utama</h5>
+                    <p class="text-muted mb-0 small">Melambangkan "Core Value" perusahaan sebagai pusat perhatian dan Gold Standard real estate.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="filosofi-card">
+                    <h5 class="fw-bold" style="color: #0b4a2b;">✨ Tujuh Bintang</h5>
+                    <p class="text-muted mb-0 small">Merepresentasikan visi revolusioner dan pencapaian kesempurnaan layanan paripurna.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+                <div class="filosofi-card">
+                    <h5 class="fw-bold" style="color: #0b4a2b;">🏠 Siluet Rumah</h5>
+                    <p class="text-muted mb-0 small">Mewakili arsitektur kokoh, perlindungan, dan struktur bisnis yang transparan.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 mb-4">
+                <div class="filosofi-card">
+                    <h5 class="fw-bold" style="color: #0b4a2b;">🪢 Tali Tambang</h5>
+                    <p class="text-muted mb-0 small">Simbol integritas dan perlindungan tak terputus yang mengikat janji kepercayaan hukum.</p>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6 mb-4">
+                <div class="filosofi-card">
+                    <h5 class="fw-bold" style="color: #0b4a2b;">🎨 Warna Hijau & Emas</h5>
+                    <p class="text-muted mb-0 small">Hijau melambangkan stabilitas pertumbuhan berkelanjutan, Emas melambangkan kejayaan dan kemewahan masa depan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer class="bg-primary-custom text-white text-center py-4 mt-auto fixed-bottom">
+    <section class="container py-5 mb-5">
+        <div class="row text-center mb-5">
+            <div class="col-md-12">
+                <h2 class="fw-bold" style="color: #0b4a2b;">Misi Strategis</h2>
+                <div style="width: 60px; height: 4px; background-color: #ffc107; margin: 10px auto;"></div>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="misi-box text-center">
+                    <h4 class="text-accent fw-bold mb-3">Inovasi Tata Ruang</h4>
+                    <p class="mb-0 text-white-50">Mengembangkan desain arsitektur visioner untuk gaya hidup modern, cerdas, dan efisien.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="misi-box text-center">
+                    <h4 class="text-accent fw-bold mb-3">Pondasi Integritas</h4>
+                    <p class="mb-0 text-white-50">Standar kepastian hukum tertinggi untuk menjamin keamanan investasi seluruh pemangku kepentingan.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="misi-box text-center">
+                    <h4 class="text-accent fw-bold mb-3">Konsumen Utama</h4>
+                    <p class="mb-0 text-white-50">Menjadikan kepuasan pelanggan sebagai pusat dari setiap keputusan strategis perusahaan.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="misi-box text-center">
+                    <h4 class="text-accent fw-bold mb-3">Ekosistem Berkelanjutan</h4>
+                    <p class="mb-0 text-white-50">Membangun mahakarya yang selaras dengan lingkungan untuk pertumbuhan nilai aset konsisten.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-primary-custom text-white text-center py-4 mt-auto">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <p class="mb-1 fw-bold">PT. Bintang Utama Jaya Property</p>
                     <p class="small text-white-50">Membangun Kepercayaan, Mewujudkan Kenyamanan.</p>
+                    <hr class="border-secondary mx-auto" style="width: 50%;">
+                    <p class="small mb-0">&copy; 2026 PT. Bintang Utama Jaya Property. Hak Cipta Dilindungi.</p>
                 </div>
             </div>
         </div>
