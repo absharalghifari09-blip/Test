@@ -261,19 +261,5 @@ tentang_html_content = """<!DOCTYPE html>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-"""
-
-import zipfile
-import os
-
-with open("index.html", "w", encoding="utf-8") as f:
-    f.write(index_html_content)
-
-with open("tentang.html", "w", encoding="utf-8") as f:
-    f.write(tentang_html_content)
-
-with zipfile.ZipFile("Perbaikan_Web_Bintang_Utama.zip", "w") as zipf:
-    zipf.write("index.html")
-    zipf.write("tentang.html")
 
 print("Zip file created successfully.")
